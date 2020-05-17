@@ -2,9 +2,12 @@
   <arg name="INPUT_IMAGE"/>
   
   <!-- add my models -->
-  <arg name="model_file" default="$(find curry_detector_ros)/models/20200515-214217-one_more_dataset/output_tflite_graph_edgetpu.tflite"/>
+  <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200515-214217-one_more_dataset/output_tflite_graph_edgetpu.tflite"/> -->
   <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200515-225420-one_more_dataset/output_tflite_graph_edgetpu.tflite"/> -->
   <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200515-235908-one_more_dataset/output_tflite_graph_edgetpu.tflite"/> -->
+  <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200515-240000-one_more_dataset/output_tflite_graph_edgetpu.tflite"/> -->
+  <arg name="model_file" default="$(find curry_detector_ros)/models/20200516-121940-local_dataset/output_tflite_graph_edgetpu.tflite"/>
+
   <arg name="label_file" default="$(find curry_detector_ros)/models/labels.txt"/>
 
   <node name="edgetpu_object_detector"
