@@ -6,9 +6,13 @@
   <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200515-225420-one_more_dataset/output_tflite_graph_edgetpu.tflite"/> -->
   <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200515-235908-one_more_dataset/output_tflite_graph_edgetpu.tflite"/> -->
   <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200515-240000-one_more_dataset/output_tflite_graph_edgetpu.tflite"/> -->
-  <arg name="model_file" default="$(find curry_detector_ros)/models/20200516-121940-local_dataset/output_tflite_graph_edgetpu.tflite"/>
+  <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200516-121940-local_dataset/output_tflite_graph_edgetpu.tflite"/> -->
 
-  <arg name="label_file" default="$(find curry_detector_ros)/models/labels.txt"/>
+  <!-- <arg name="label_file" default="$(find curry_detector_ros)/models/labels.txt"/> -->
+
+  <arg name="model_file" default="$(find curry_detector_ros)/models/20200528-230448-curry_voc_dataset/output_tflite_graph_edgetpu.tflite"/>
+  
+  <arg name="label_file" default="$(find curry_detector_ros)/models/20200528-230448-curry_voc_dataset/labels.txt"/>
 
   <node name="edgetpu_object_detector"
         pkg="coral_usb" type="edgetpu_object_detector.py"
