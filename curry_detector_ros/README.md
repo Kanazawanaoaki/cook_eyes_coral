@@ -25,3 +25,29 @@ adjust threshold
 ```
 rosrun rqt_reconfigure rqt_reconfigure
 ```
+
+## how to run curry detection
+
+roscore
+```
+roscore
+```
+
+rosbag play
+```
+cd ~/Desktop/codes/in_jsk/my_dataset/rosbag/record-test/
+rosbag play tomato-on-cutboard-2020-05-20-16-20-29.bag -l
+```
+coral launch
+```
+source ~/coral_ws/devel/setup.bash
+roslaunch curry_detector_ros edgetpu_curry_ingredients_detector.launch INPUT_IMAGE:=/camera/rgb/image_raw
+```
+view result
+```
+rosrun image_view image_view image:=/edgetpu_object_detector/output/image
+```
+adjust threshold
+```
+rosrun rqt_reconfigure rqt_reconfigure
+```
