@@ -1,0 +1,6 @@
+0 potato
+1 potato_peeled
+2 carrot
+3 onion
+4 onion_peeled
+5 tomato
