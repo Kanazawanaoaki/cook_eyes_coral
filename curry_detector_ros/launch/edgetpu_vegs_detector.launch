@@ -4,11 +4,10 @@
   <!-- add my models -->
   <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200606-203100-vegs_voc_dataset/output_tflite_graph_edgetpu.tflite"/> -->
   <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200606-211753-vegs_small_datasets/output_tflite_graph_edgetpu.tflite"/> -->
-  <arg name="model_file" default="$(find curry_detector_ros)/models/20200606-214000-vegs_small_datasets/output_tflite_graph_edgetpu.tflite"/>
+  <!-- <arg name="model_file" default="$(find curry_detector_ros)/models/20200606-214000-vegs_small_datasets/output_tflite_graph_edgetpu.tflite"/> -->
+  <arg name="model_file" default="$(find curry_detector_ros)/models/20200607-013746-vegs_v3_datasets/output_tflite_graph_edgetpu.tflite"/>
   
-  <!-- <arg name="label_file" default="$(find curry_detector_ros)/models/20200606-203100-vegs_voc_dataset/labels.txt"/> -->
-  <!-- <arg name="label_file" default="$(find curry_detector_ros)/models/20200606-211753-vegs_small_datasets/labels.txt"/> -->
-  <arg name="label_file" default="$(find curry_detector_ros)/models/20200606-214000-vegs_small_datasets/labels.txt"/>
+  <arg name="label_file" default="$(find curry_detector_ros)/models/20200606-203100-vegs_voc_dataset/labels.txt"/>
 
   <node name="edgetpu_object_detector"
         pkg="coral_usb" type="edgetpu_object_detector.py"
