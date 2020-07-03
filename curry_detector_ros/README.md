@@ -26,7 +26,7 @@ adjust threshold
 rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-## how to run curry detection
+## How to run curry detection
 
 roscore
 ```
@@ -50,4 +50,11 @@ rosrun image_view image_view image:=/edgetpu_object_detector/output/image
 adjust threshold
 ```
 rosrun rqt_reconfigure rqt_reconfigure
+```
+
+### veg_detector
+for now it is the best model.
+```
+source ~/coral_ws/devel/setup.bash
+roslaunch curry_detector_ros edgetpu_curry_ingredients_detector.launch INPUT_IMAGE:=/camera/rgb/image_raw
 ```
