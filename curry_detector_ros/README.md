@@ -56,5 +56,5 @@ rosrun rqt_reconfigure rqt_reconfigure
 for now it is the best model.
 ```
 source ~/coral_ws/devel/setup.bash
-roslaunch curry_detector_ros edgetpu_curry_ingredients_detector.launch INPUT_IMAGE:=/camera/rgb/image_raw
+roslaunch curry_detector_ros edgetpu_vegs_detector.launch INPUT_IMAGE:=/camera/rgb/image_raw
 ```
