@@ -58,3 +58,10 @@ for now it is the best model.
 source ~/coral_ws/devel/setup.bash
 roslaunch curry_detector_ros edgetpu_vegs_detector.launch INPUT_IMAGE:=/camera/rgb/image_raw
 ```
+
+### epic_kitchens_2018 object_detection
+[epic_kitchens_2018](https://epic-kitchens.github.io/2020-55.html )'s dataset for object_detection
+```
+source ~/coral_ws/devel/setup.bash
+roslaunch curry_detector_ros edgetpu_epic_object_detector.launch INPUT_IMAGE:=/camera/rgb/image_raw
+```
