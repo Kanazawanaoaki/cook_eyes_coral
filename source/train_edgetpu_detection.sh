@@ -28,7 +28,7 @@ DATE=$(date +"%Y%m%d-%H%M%S")
 set -x
 scp -q -r $DATASET_DIR dlbox1.jsk.imi.i.u-tokyo.ac.jp:$DATE-$DATASET_NAME
 cat <<EOF | ssh -t dlbox1.jsk.imi.i.u-tokyo.ac.jp
-    wget https://raw.githubusercontent.com/k-okada/coral_usb_ros/add_docker/docker/run.sh -O run.sh
+    wget https://raw.githubusercontent.com/knorth55/coral_usb_ros/master/training/labelme_voc/run.sh -O run.sh
     bash run.sh $DATE-$DATASET_NAME $@
 EOF
 
