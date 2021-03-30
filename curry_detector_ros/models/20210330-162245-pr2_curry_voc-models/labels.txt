@@ -1,0 +1,16 @@
+0 potato
+1 potato_peeled
+2 carrot
+3 onion
+4 onion_peeled
+5 bowl
+6 knife
+7 peeler
+8 potato_peeler
+9 spatula
+10 ladle
+11 pot
+12 measuring_cup
+13 cutting_board
+14 oil_dispenser
+15 tomato
