@@ -1,0 +1,7 @@
+0 green-bowl
+1 peeler
+2 carrot
+3 potato-peeler
+4 alumi-bowl
+5 measuring-cup
+6 dispenser
