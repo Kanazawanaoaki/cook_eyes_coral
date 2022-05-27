@@ -65,3 +65,9 @@ roslaunch curry_detector_ros edgetpu_vegs_detector.launch INPUT_IMAGE:=/camera/r
 source ~/coral_ws/devel/setup.bash
 roslaunch curry_detector_ros edgetpu_epic_object_detector.launch INPUT_IMAGE:=/camera/rgb/image_raw
 ```
+
+### pr2_look_around_object_detector
+```
+source ~/coral_ws/devel/setup.bash
+roslaunch curry_detector_ros edgetpu_epic_object_detector.launch INPUT_IMAGE:=/image_publisher/output model_name:=20220304_mask_aug_n2_rembg_and_mask_test-xml-config
+```
